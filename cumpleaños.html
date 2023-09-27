@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicitaciones de Cumpleaños</title>
+    <style>
+        body {
+            background-color: green;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+
+        .felicitacion {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            transform-origin: center bottom;
+        }
+
+        .mujer {
+            color: pink;
+        }
+
+        .hombre {
+            color: blue;
+        }
+
+        /* Animación de entrada con rotación y zoom */
+        @keyframes entrada {
+            from {
+                opacity: 0;
+                transform: translateY(-30px) scale(0.7) rotate(-5deg);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1) rotate(0deg);
+            }
+        }
+
+        /* Animación de cambio de color */
+        @keyframes cambioColor {
+            0%, 100% {
+                background-color: white;
+            }
+            50% {
+                background-color: lightblue;
+            }
+        }
+
+        /* Aplicar animaciones a las felicitaciones */
+        .felicitacion:nth-child(1) {
+            animation-name: entrada;
+            animation-delay: 0.5s;
+        }
+
+        .felicitacion:nth-child(2) {
+            animation-name: entrada;
+            animation-delay: 1s;
+        }
+
+        .felicitacion:nth-child(3) {
+            animation-name: entrada;
+            animation-delay: 1.5s;
+        }
+
+        .felicitacion:nth-child(4) {
+            animation-name: entrada;
+            animation-delay: 2s;
+        }
+
+        /* Aplicar animación de cambio de color al pasar el cursor */
+        .felicitacion:hover {
+            animation-name: cambioColor;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        
+        /* Estilos para las imágenes */
+        .imagen {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Felicitaciones de Cumpleaños</h1>
+
+    <div class="felicitacion mujer">
+        <img src="imagen_mujer.jpg" alt="Mujer 1" class="imagen">
+        <h2>¡Feliz Cumpleaños Mujer 1!</h2>
+        <p>Esperamos que tengas un día lleno de alegría y felicidad. Gracias por ser parte de nuestra cooperativa.</p>
+    </div>
+
+    <div class="felicitacion mujer">
+        <img src="imagen_mujer.jpg" alt="Mujer 2" class="imagen">
+        <h2>¡Feliz Cumpleaños Mujer 2!</h2>
+        <p>Que este día esté lleno de sorpresas y momentos especiales. ¡Feliz cumpleaños!</p>
+    </div>
+
+    <div class="felicitacion mujer">
+        <img src="imagen_mujer.jpg" alt="Mujer 3" class="imagen">
+        <h2>¡Feliz Cumpleaños Mujer 3!</h2>
+        <p>Te deseamos un año lleno de éxitos y logros. ¡Feliz cumpleaños!</p>
+    </div>
+
+    <div class="felicitacion Master Wilson Pauta">
+        <img src="C:\Users\jllivichuzhca\OneDrive\PAGUINAS WEBS\1_master.png" alt="Hombre" class="imagen">
+        <h2>¡Feliz Cumpleaños Hombre!</h2>
+        <p>Esperamos que este día esté lleno de alegría y celebración. Gracias por tu compromiso con la cooperativa.</p>
+    </div>
+</body>
+</html>
